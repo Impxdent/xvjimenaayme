@@ -1,0 +1,449 @@
+/*==============================
+        GOOGLE FONTS
+==============================*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap');
+
+/*==============================
+            COLORES
+==============================*/
+:root{
+
+    --gold:#C8A85D;
+    --gold-light:#E7D2A5;
+
+    --pink:#F9F3F2;
+
+    --cream:#FFFDFB;
+
+    --text:#444;
+
+    --white:#ffffff;
+
+}
+
+/*==============================
+            GENERAL
+==============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Montserrat',sans-serif;
+    color:var(--text);
+    background:linear-gradient(#fff,#fdf8f5);
+    overflow-x:hidden;
+
+}
+
+#contador h1{
+
+    color: var(--gold);
+    font-size: 3rem;
+    font-family: 'Cormorant Garamond';
+    animation: pulse 1s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.08);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+section{
+
+    padding:100px 0;
+
+}
+
+h1{
+
+    font-family:'Great Vibes',cursive;
+    font-size:6rem;
+    color:white;
+
+}
+
+h2{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
+    color:var(--gold);
+    margin-bottom:30px;
+
+}
+
+h3{
+
+    font-family:'Cormorant Garamond',serif;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    color:white;
+
+}
+
+p{
+
+    font-size:1.1rem;
+    line-height:1.8;
+
+}
+
+/*==============================
+            HERO
+==============================*/
+
+.hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("img/portada.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    position:relative;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    height:140px;
+
+    background:linear-gradient(to top,#fff,transparent);
+
+}
+
+.hero .container{
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.hero p{
+
+    color:white;
+
+    letter-spacing:3px;
+
+}
+
+.hero .btn{
+
+    border-radius:50px;
+
+    padding:15px 40px;
+
+    transition:.4s;
+
+}
+
+.hero .btn:hover{
+
+    transform:translateY(-5px);
+
+    background:var(--gold);
+
+    color:white;
+
+}
+
+/*==============================
+          CONTADOR
+==============================*/
+
+#contador .col{
+
+    background:white;
+
+    margin:10px;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+#contador .col:hover{
+
+    transform:translateY(-10px);
+
+}
+
+#contador h1{
+
+    color:var(--gold);
+
+    font-size:3rem;
+
+    font-family:'Cormorant Garamond';
+
+}
+
+/*==============================
+            MENSAJE
+==============================*/
+
+.mensaje{
+
+    background:var(--pink);
+
+    text-align:center;
+
+}
+
+.mensaje p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:1.2rem;
+
+}
+
+/*==============================
+            GALERÍA
+==============================*/
+
+img{
+
+    transition:.5s;
+
+    border-radius:20px;
+
+}
+
+img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+
+}
+
+/*==============================
+            EVENTOS
+==============================*/
+
+.evento{
+
+    background:white;
+
+}
+
+.evento .col-md-6{
+
+    padding:40px;
+
+}
+
+.evento h3{
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+}
+
+.evento .btn{
+
+    border-radius:40px;
+
+    padding:12px 30px;
+
+}
+
+/*==============================
+            TIMELINE
+==============================*/
+
+.timeline{
+
+    list-style:none;
+
+    max-width:600px;
+
+    margin:auto;
+
+}
+
+.timeline li{
+
+    background:white;
+
+    margin:20px 0;
+
+    padding:20px;
+
+    border-left:5px solid var(--gold);
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+}
+
+/*==============================
+        DRESS CODE
+==============================*/
+
+.dress{
+
+    background:linear-gradient(45deg,#fdf7ef,#fff);
+
+}
+
+/*==============================
+        REGALOS
+==============================*/
+
+.btn-dark{
+
+    border-radius:50px;
+
+    padding:15px 35px;
+
+    background:var(--gold);
+
+    border:none;
+
+}
+
+.btn-dark:hover{
+
+    background:#b58b3e;
+
+}
+
+/*==============================
+      CONFIRMACIÓN
+==============================*/
+
+.confirmacion{
+
+    background:
+
+    linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)),
+
+    url("img/flores.png");
+
+    background-size:cover;
+
+}
+
+/*==============================
+            FOOTER
+==============================*/
+
+footer{
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:80px 0;
+
+}
+
+footer h2{
+
+    color:white;
+
+}
+
+/*==============================
+      SCROLLBAR
+==============================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--gold);
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eee;
+
+}
+
+/*==============================
+        RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+h1{
+
+    font-size:3.5rem;
+
+}
+
+h2{
+
+    font-size:2.2rem;
+
+}
+
+.hero{
+
+    background-attachment:scroll;
+
+}
+
+section{
+
+    padding:70px 0;
+
+}
+
+}
