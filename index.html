@@ -17,14 +17,14 @@
 
     <body>
 
-        <!-- principal -->
+        <!-- principal (agregar fondo: "media/fondo.jpeg")-->
 
         <section class="hero d-flex align-items-center text-center">
             <div class="container">
                 <h3 data-aos="fade-down">Mis XV Años</h3>
                 <h1 data-aos="zoom-in">Jimena Ayme</h1>
-                <div class="ornamento">❦────────────❦</div>
-                <p data-aos="fade-up">22 de Agosto de 2026</p>
+                <div class="ornamento">❦────────❦</div>
+                <h3>22 de Agosto de 2026</h3>
                 <a href="#contador" id="btnDescubrir" class="btn btn-light btn-lg mt-3">Descubrir</a>
                 <audio id="musica" loop>
                     <source src="media/cancion.mp3" type="audio/mpeg">
@@ -35,38 +35,51 @@
             </div>
         </section>
 
-        <!-- contador -->
+        <!-- contador (fondo color dorado)-->
 
-        <section id="contador" class="container py-5 text-center">
-            <h2 data-aos="fade-up">Cuenta regresiva</h2>
-            <div class="row mt-5">
-                <div class="col">
-                    <h1 id="dias">120</h1>
-                    <p>Días</p>
+        <section id="contador" class="contador-section">
+            <div class="container py-5 text-center">
+                <h2 data-aos="fade-up">Cuenta regresiva</h2>
+                <div class="row mt-5">
+                    <div class="col">
+                        <h1 id="dias">120</h1>
+                        <p>Días</p>
+                    </div>
+                    <div class="col">
+                        <h1 id="horas">10</h1>
+                        <p>Horas</p>
+                    </div>
+                    <div class="col">
+                        <h1 id="minutos">25</h1>
+                        <p>Minutos</p>
+                    </div>
+                    <div class="col">
+                        <h1 id="segundos">40</h1>
+                        <p>Segundos</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <h1 id="horas">10</h1>
-                    <p>Horas</p>
+                <div class="scroll-indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="col">
-                    <h1 id="minutos">25</h1>
-                    <p>Minutos</p>
-                </div>
-                <div class="col">
-                    <h1 id="segundos">40</h1>
-                    <p>Segundos</p>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <span></span>
-                <span></span>
-                <span></span>
             </div>
         </section>
 
-        <!-- mensaje -->
+        <!-- nombres papás (fondo color corinto) -->
 
-        <section class="mensaje">
+        <section class="padres">
+            <div class="container text-center">
+                <h4 data-aos="fade-up">
+                Cristian Contreras e Ingrid Ortega tienen el agrado de invitarte a los quince 
+                años de su hija y sería un honor que nos puedas acompañar en esta noche tan especial.
+                </h4>
+            </div>
+        </section>
+
+        <!-- mensaje (fondo color dorado)-->
+
+        <section class="mensaje-dorado">
             <div class="container text-center">
                 <h2 data-aos="fade-up">Un día inolvidable</h2>
                 <h4 data-aos="fade-up">
@@ -76,36 +89,17 @@
             </div>
         </section>
 
-        <!-- galería 
+        <!-- lugares (fondo color corinto)-->
 
-        <section class="container py-5">
-            <h2 class="text-center mb-5" data-aos="fade-up">
-                Galería
-            </h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <img src="img/foto1.jpg" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-md-4">
-                    <img src="img/foto2.jpg" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-md-4">
-                    <img src="img/foto3.jpg" class="img-fluid rounded shadow">
-                </div>
-            </div>
-        </section> -->
-
-        <!-- lugares -->
-
-        <section class="evento">
+        <section class="evento-corinto">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center">
                         <h3>Ceremonia</h3>
                         <p>Parroquia San Juan Bosco</p>
-                        <p>20 Avenida 13-45 Zona 11, Ciudad de Guatemala</p>
+                        <p>26 calle 2-46, Zona 1 de la Ciudad de Guatemala</p>
                         <p>4:00 PM</p>
-                        <a href="https://share.google/L0OBmOgYe45ThyJ68" class="btn btn-outline-dark">Ver ubicación</a>
+                        <a href="https://ul.waze.com/ul?venue_id=176619666.1766065590.475710&overview=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" class="btn btn-outline-dark">Ver ubicación</a>
                     </div>
                     <div class="col-md-6 text-center">
                         <h3>Recepción</h3>
@@ -118,41 +112,63 @@
             </div>
         </section>
 
-        <!-- programa 
-
-        <section class="container py-5">
-            <h2 class="text-center">Programa</h2>
-            <ul class="timeline">
-                <li>5:00 PM • Ceremonia</li>
-                <li>6:00 PM • Fotografías</li>
-                <li>7:00 PM • Recepción</li>
-                <li>8:00 PM • Cena</li>
-                <li>9:00 PM • Vals</li>
-                <li>10:00 PM • Fiesta</li>
-            </ul>
-        </section> -->
-
-        <!-- vestimenta -->
+        <!-- vestimenta (fondo color dorado)-->
 
         <section class="dress text-center">
             <div class="container">
                 <h2>Código de vestimenta</h2>
                 <h4>Formal</h4>
+                <br><br><br>
+                <img src="media/vestimenta-formal.png">
+                <br><br><br>
+                <h4>
+                    Para conservar la armonía de esta celebración, el color dorado 
+                    será de uso exclusivo para la quinceañera, mientras que los colores 
+                    corinto y azul estarán reservados para su familia. Asimismo, la 
+                    quinceañera solicita cordialmente a sus invitados evitar vestir 
+                    prendas en tonos amarillos, anaranjados y rojo.
+                </h4>
             </div>
         </section>
 
-        <!-- regalos -->
+        <!-- regalos (fondo color corinto)-->
 
-        <section class="container py-5 text-center">
+        <section class="regalos text-center">
             <h2>Mesa de regalos</h2>
-            <h4>Tu presencia será mi mejor regalo, pero si deseas regalarme algo, que sea dentro de un sobrecito</h4>
+            <h4>Gracias por acompañarnos en esta celebración. Si deseas expresar tu cariño 
+                con un obsequio, un regalo en sobre será una hermosa manera de hacerlo.
+            </h4>
+            <br><br><br>
+            <img src="media/sobre.jpg">
         </section>
 
-        <!-- confirmación -->
+        <!-- confirmación (fondo color dorado)-->
 
         <section class="confirmacion">
             <div class="container text-center">
                 <h2>Confirma tu asistencia</h2>
+                <h4>
+                    Le solicitamos confirmar su asistencia antes de concluir la segunda 
+                    cuenta regresiva de esta invitación.
+                </h4>
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-1 contador-mini">
+                        <h2 id="diasRSVP">00</h2>
+                        <p>Días</p>
+                    </div>
+                    <div class="col-1 contador-mini">
+                        <h2 id="horasRSVP">00</h2>
+                        <p>Horas</p>
+                    </div>
+                    <div class="col-1 contador-mini">
+                        <h2 id="minRSVP">00</h2>
+                        <p>Minutos</p>
+                    </div>
+                    <div class="col-1 contador-mini">
+                        <h2 id="secRSVP">00</h2>
+                        <p>Segundos</p>
+                    </div>
+                </div>
                 <a class="btn btn-success btn-lg">
                     WhatsApp
                 </a>

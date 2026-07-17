@@ -97,3 +97,52 @@ btnMusic.addEventListener("click", () => {
     reproduciendo = !reproduciendo;
 
 });
+
+//segundo contador
+
+const fechaRSVP = new Date("August 4, 2026 23:59:59").getTime();
+
+function actualizarRSVP() {
+
+    const ahora = new Date().getTime();
+
+    const diferencia = fechaRSVP - ahora;
+
+    if (diferencia <= 0) {
+
+        document.getElementById("diasRSVP").textContent = "00";
+        document.getElementById("horasRSVP").textContent = "00";
+        document.getElementById("minRSVP").textContent = "00";
+        document.getElementById("secRSVP").textContent = "00";
+
+        return;
+
+    }
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+
+    const horas = Math.floor(
+        (diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+
+    const minutos = Math.floor(
+        (diferencia % (1000 * 60 * 60)) / (1000 * 60)
+    );
+
+    const segundos = Math.floor(
+        (diferencia % (1000 * 60)) / 1000
+    );
+
+    document.getElementById("diasRSVP").textContent = String(dias).padStart(2, "0");
+
+    document.getElementById("horasRSVP").textContent = String(horas).padStart(2, "0");
+
+    document.getElementById("minRSVP").textContent = String(minutos).padStart(2, "0");
+
+    document.getElementById("secRSVP").textContent = String(segundos).padStart(2, "0");
+
+}
+
+actualizarRSVP();
+
+setInterval(actualizarRSVP, 1000);
