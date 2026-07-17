@@ -1,11 +1,7 @@
-/*==============================
-        GOOGLE FONTS
-==============================*/
+/*GOOGLE FONTS*/
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap');
 
-/*==============================
-            COLORES
-==============================*/
+/*COLORES*/
 :root{
 
     --gold:#C8A85D;
@@ -21,9 +17,7 @@
 
 }
 
-/*==============================
-            GENERAL
-==============================*/
+/*GENERAL*/
 
 *{
     margin:0;
@@ -35,9 +29,48 @@ html{
     scroll-behavior:smooth;
 }
 
+.ornamento{
+
+    color:#d4af37;
+
+    font-size:28px;
+
+    margin:20px 0;
+
+    letter-spacing:8px;
+
+}
+
+/*NOMBRE*/
+
+.hero h1{
+
+    animation:brillo 5s infinite;
+
+}
+
+@keyframes brillo{
+
+    0%,100%{
+
+        text-shadow:
+        0 0 10px rgba(255,255,255,.2);
+
+    }
+
+    50%{
+
+        text-shadow:
+        0 0 25px rgba(255,255,255,.8),
+        0 0 45px rgba(212,175,55,.5);
+
+    }
+
+}
+
 body{
 
-    font-family:'Montserrat',sans-serif;
+    font-family:'Cormorant Garamond',sans-serif;
     color:var(--text);
     background:linear-gradient(#fff,#fdf8f5);
     overflow-x:hidden;
@@ -50,6 +83,70 @@ body{
     font-size: 3rem;
     font-family: 'Cormorant Garamond';
     animation: pulse 1s infinite;
+
+}
+
+.scroll-indicator{
+
+    margin-top:60px;
+
+}
+
+.scroll-indicator span{
+
+    display:block;
+
+    width:18px;
+
+    height:18px;
+
+    margin:8px auto;
+
+    border-right:3px solid #C8A85D;
+
+    border-bottom:3px solid #C8A85D;
+
+    transform:rotate(45deg);
+
+    animation:seta 2s infinite;
+
+}
+
+.scroll-indicator span:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+.scroll-indicator span:nth-child(3){
+
+    animation-delay:.4s;
+
+}
+
+@keyframes seta{
+
+    0%{
+
+        opacity:0;
+
+        transform:rotate(45deg) translate(-8px,-8px);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:rotate(45deg) translate(8px,8px);
+
+    }
 
 }
 
@@ -108,9 +205,7 @@ p{
 
 }
 
-/*==============================
-            HERO
-==============================*/
+/*HERO*/
 
 .hero{
 
@@ -164,27 +259,30 @@ p{
 
 .hero .btn{
 
-    border-radius:50px;
+    background:linear-gradient(45deg,#c9a04f,#e7d19c);
 
-    padding:15px 40px;
+    border:none;
+
+    color:white;
+
+    padding:16px 45px;
+
+    border-radius:40px;
 
     transition:.4s;
+
 
 }
 
 .hero .btn:hover{
 
-    transform:translateY(-5px);
+    transform:translateY(-4px);
 
-    background:var(--gold);
-
-    color:white;
+    box-shadow:0 12px 25px rgba(0,0,0,.3);
 
 }
 
-/*==============================
-          CONTADOR
-==============================*/
+/*CONTADOR*/
 
 #contador .col{
 
@@ -218,9 +316,7 @@ p{
 
 }
 
-/*==========================
-      BOTÓN VINILO
-==========================*/
+/*BOTÓN VINILO*/
 
 #btnMusic{
 
@@ -288,9 +384,7 @@ p{
 
 }
 
-/*==============================
-            MENSAJE
-==============================*/
+/*MENSAJE*/
 
 .mensaje{
 
@@ -310,9 +404,7 @@ p{
 
 }
 
-/*==============================
-            GALERÍA
-==============================*/
+/*GALERÍA*/
 
 img{
 
@@ -330,9 +422,7 @@ img:hover{
 
 }
 
-/*==============================
-            EVENTOS
-==============================*/
+/*EVENTOS*/
 
 .evento{
 
@@ -362,9 +452,7 @@ img:hover{
 
 }
 
-/*==============================
-            TIMELINE
-==============================*/
+/*TIMELINE*/
 
 .timeline{
 
@@ -392,9 +480,7 @@ img:hover{
 
 }
 
-/*==============================
-        DRESS CODE
-==============================*/
+/*DRESS CODE*/
 
 .dress{
 
@@ -402,9 +488,7 @@ img:hover{
 
 }
 
-/*==============================
-        REGALOS
-==============================*/
+/*REGALOS*/
 
 .btn-dark{
 
@@ -424,9 +508,7 @@ img:hover{
 
 }
 
-/*==============================
-      CONFIRMACIÓN
-==============================*/
+/*CONFIRMACIÓN*/
 
 .confirmacion{
 
@@ -440,9 +522,7 @@ img:hover{
 
 }
 
-/*==============================
-            FOOTER
-==============================*/
+/*FOOTER*/
 
 footer{
 
@@ -462,9 +542,7 @@ footer h2{
 
 }
 
-/*==============================
-      SCROLLBAR
-==============================*/
+/*SCROLLBAR*/
 
 ::-webkit-scrollbar{
 
@@ -486,9 +564,7 @@ footer h2{
 
 }
 
-/*==============================
-        RESPONSIVE
-==============================*/
+/*RESPONSIVE*/
 
 @media(max-width:768px){
 
