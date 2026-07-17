@@ -223,37 +223,27 @@ body{
 
 }
 
-.contador-mini{
-
-    background:rgba(255,255,255,.15);
-
-    border:1px solid rgba(255,255,255,.25);
-
-    border-radius:18px;
-
-    margin:10px;
-
-    padding:20px;
-
-    backdrop-filter:blur(6px);
-
+.contador-rsvp {
+    max-width: 800px;
+    margin: 50px auto 0;
 }
 
-.contador-mini h2{
-
-    color:white;
-
-    font-size:2.5rem;
-
+.contador-mini {
+    padding: 20px 10px;
 }
 
-#contador h1{
-
-    color: var(--gold);
+.contador-mini h2 {
+    color: white;
     font-size: 3rem;
-    font-family: 'Cormorant Garamond';
-    animation: pulse 1s infinite;
+    margin: 0;
+    line-height: 1;
+}
 
+.contador-mini p {
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    margin-bottom: 0;
 }
 
 .scroll-indicator{
@@ -643,6 +633,22 @@ section{
 
     padding:70px 0;
 
+}
+
+.contador-rsvp {
+    margin-top: 30px;
+}
+
+.contador-mini {
+    padding: 20px 5px;
+}
+
+.contador-mini h2 {
+    font-size: 2.5rem;
+}
+
+.contador-mini p {
+    font-size: 1.2rem;
 }
 
 }
