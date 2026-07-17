@@ -54,3 +54,46 @@ function actualizarContador() {
 actualizarContador();
 
 const intervalo = setInterval(actualizarContador, 1000);
+
+//musica
+const musica = document.getElementById("musica");
+const btnMusic = document.getElementById("btnMusic");
+const btnDescubrir = document.getElementById("btnDescubrir");
+
+let reproduciendo = false;
+
+btnDescubrir.addEventListener("click", () => {
+
+    if (!reproduciendo) {
+
+        musica.play();
+
+        reproduciendo = true;
+
+        btnMusic.style.display = "block";
+
+        btnMusic.classList.add("girando");
+
+    }
+
+});
+
+btnMusic.addEventListener("click", () => {
+
+    if (reproduciendo) {
+
+        musica.pause();
+
+        btnMusic.classList.remove("girando");
+
+    } else {
+
+        musica.play();
+
+        btnMusic.classList.add("girando");
+
+    }
+
+    reproduciendo = !reproduciendo;
+
+});
