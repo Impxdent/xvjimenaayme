@@ -74,11 +74,9 @@ body{
 
 .contador-section{
 
-    background:linear-gradient(
-        180deg,
-        #C8A85D,
-        #B89246
-    );
+    background:
+    linear-gradient(rgba(30,18,10,.55),rgba(30,18,10,.65)),
+    url("../media/fondodorado.jpeg");
 
     color:white;
 
@@ -103,7 +101,9 @@ body{
 
 .padres{
 
-    background:#6D1F34;
+    background:
+    linear-gradient(rgba(30,18,10,.55),rgba(30,18,10,.65)),
+    url("../media/fondocorinto.jpeg");
 
     color:white;
 
@@ -124,7 +124,9 @@ body{
 
 .mensaje-dorado{
 
-    background:#C8A85D;
+    background:
+    linear-gradient(rgba(30,18,10,.55),rgba(30,18,10,.65)),
+    url("../media/fondodorado.jpeg");
 
     color:white;
 
@@ -138,7 +140,9 @@ body{
 
 .evento-corinto{
 
-    background:#6D1F34;
+    background:
+    linear-gradient(rgba(30,18,10,.55),rgba(30,18,10,.65)),
+    url("../media/fondocorinto.jpeg");
 
     color:white;
 
@@ -168,7 +172,9 @@ body{
 
 .dress{
 
-    background:#C8A85D;
+    background:
+    linear-gradient(rgba(30,18,10,.55),rgba(30,18,10,.65)),
+    url("../media/fondodorado.jpeg");
 
     color:white;
 
@@ -188,7 +194,9 @@ body{
 
 .regalos{
 
-    background:#6D1F34;
+    background:
+    linear-gradient(rgba(30,18,10,.55),rgba(30,18,10,.65)),
+    url("../media/fondocorinto.jpeg");
 
     color:white;
 
@@ -202,7 +210,9 @@ body{
 
 .confirmacion{
 
-    background:#C8A85D;
+    background:
+    linear-gradient(rgba(30,18,10,.55),rgba(30,18,10,.65)),
+    url("../media/fondodorado.jpeg");
 
     color:white;
 
