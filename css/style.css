@@ -170,6 +170,30 @@ body{
 
 }
 
+.evento-separador{
+
+    display:none;
+
+}
+
+@media(max-width:768px){
+
+    .evento-separador{
+
+        display:block;
+
+        width:70%;
+
+        margin:40px auto;
+
+        border:0;
+
+        border-top:1px solid rgba(255,255,255,.3);
+
+    }
+
+}
+
 .dress{
 
     background:
@@ -230,6 +254,34 @@ body{
 .confirmacion .btn{
 
     margin-top:30px;
+
+}
+
+.btn-whatsapp {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 4rem;
+
+    transition: .4s;
+
+}
+
+.btn-whatsapp:hover {
+
+    color: #25D366;
+
+    transform: translateY(-5px) scale(1.1);
+
+    filter: drop-shadow(0 8px 15px rgba(0,0,0,.25));
 
 }
 
