@@ -285,6 +285,16 @@ body{
 
 }
 
+.contmini{
+    background:
+    linear-gradient(rgba(30,18,10,.55),rgba(30,18,10,.65)),
+    url("../media/fondocorinto.jpeg");
+
+    color:white;
+
+    text-align:center;
+}
+
 .contador-rsvp {
     max-width: 800px;
     margin: 50px auto 0;
